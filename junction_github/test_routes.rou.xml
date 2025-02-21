@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-11-08 10:08:29 by Eclipse SUMO netedit Version 1.14.1
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="50" speedDev="10"/>
+
+    <!-- Define routes for each lane -->
+    <route id="route_lane0" edges="NC CS"/>
+    <route id="route_lane1" edges="NC CS"/>
+    <route id="route_lane2" edges="NC CS"/>
+
+    <!-- Flow for lane 0 (left lane) -->
+    <flow id="flow_lane0" type="car" route="route_lane0" begin="0" end="3600" number="600" departLane="0" departPos="free" departSpeed="max"/>
+
+    <!-- Flow for lane 1 (middle lane) -->
+    <flow id="flow_lane1" type="car" route="route_lane1" begin="0" end="3600" number="400" departLane="1" departPos="free" departSpeed="max"/>
+
+    <!-- Flow for lane 2 (right lane) -->
+    <flow id="flow_lane2" type="car" route="route_lane2" begin="0" end="3600" number="200" departLane="2" departPos="free" departSpeed="max"/>
+
+    <trip id="right_0" from="WC" to="CE" depart="0" departPos="random" arrivalPos="random" />
+    <trip id="left_1" from="EC" to="CW" depart="0" departPos="random" arrivalPos="random" />
+    <trip id="right_2" from="WC" to="CE" depart="1" departPos="random" arrivalPos="random" />
+
+
+</routes>
